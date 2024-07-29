@@ -1,0 +1,25 @@
+1. The number of edges from the root to the node is called __________ of the tree.
+   1. Height
+   2. Depth
+   3. Length
+   4. Width
+2. Which type of traversal of binary search tree outputs the value in sorted order?
+   1. In-order
+   2. Pre-order
+   3. Post-order
+   4. None
+3. What is the speciality about the inorder traversal of a binary search tree?
+   1. It traverses in a non increasing order
+   2. It traverses in an increasing order
+   3. It traverses in a random fashion
+   4. It traverses based on priority of the node
+4. What are the worst case and average case complexities of a binary search tree?
+   1. O(n), O(n)
+   2. O(logn), O(logn)
+   3. O(n), O(logn)
+   4. O(logn), O(n)
+5. Which of the following statement about binary tree is CORRECT?
+   1. Every binary tree is either complete or full 
+   2. Every complete binary tree is also a full binary tree
+   3. A binary tree cannot be both complete and full
+   4. Every full binary tree is also a complete binary tree

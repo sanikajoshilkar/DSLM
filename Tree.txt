@@ -1,0 +1,45 @@
+Definition:-
+     A tree data structure is a hierarchical structure that is used to represent and organize data in a way that is easy to navigate and search. It is a collection of nodes that are connected by edges and has a hierarchical relationship between the nodes. The topmost node of the tree is called the root, and the nodes below it are called the child nodes. Each node can have multiple child nodes, and these child nodes can also have their own child nodes, forming a recursive structure.
+
+Terminologies related to the tree data structure:-
+
+1). Root: The root node is the topmost node in the tree hierarchy. In other words, the root node is the one that doesn't have any parent. If a node   is directly linked to some other node, it would be called a parent-child relationship.
+
+2). Child node: If the node is a descendant of any node, then the node is known as a child node.
+
+3). Parent: If the node contains any sub-node, then that node is said to be the parent of that sub-node.
+
+4). Sibling: The nodes that have the same parent are known as siblings.
+
+5). Leaf Node:- The node of the tree, which doesn't have any child node, is called a leaf node. A leaf node is the bottom-most node of the tree. There can be any number of leaf nodes present in a general tree. Leaf nodes can also be called external nodes.
+
+6). Internal nodes: A node has atleast one child node known as an internal node.
+
+7). Ancestor node:- An ancestor of a node is any predecessor node on a path from the root to that node. The root node doesn't have any ancestors. 
+
+8). Descendant: The immediate successor of the given node is known as a descendant of a node
+
+Types of the tree in data structure:-
+
+1. Binary Tree:
+         A binary Tree is defined as a Tree data structure with at most 2 children. Since each element in a binary tree can have only 2 children, we typically name them the left and right child.
+
+2. Ternary Tree:
+        A Ternary Tree is a tree data structure in which each node has at most three child nodes, usually distinguished as “left”, “mid” and “right”.
+
+3. N-ary Tree (Generic Tree): 
+       Generic trees are a collection of nodes where each node is a data structure that consists of records and a list of references to its children(duplicate references are not allowed). Unlike the linked list, each node stores the address of multiple nodes. 
+
+4. AVL Tree:
+       AVL tree is a self-balancing Binary Search Tree (BST) where the difference between heights of left and right subtrees for any node cannot be more than one. 
+
+5. Red-Black Tree: 
+      A red-black tree is a kind of self-balancing binary search tree where each node has an extra bit, and that bit is often interpreted as the color (red or black). These colors are used to ensure that the tree remains balanced during insertions and deletions.Although the balance of the tree is not perfect, it is good enough to reduce the searching time and maintain it around O(log n) time, where n is the total number of elements in the tree.
+
+6. Segment Tree:
+     In computer science, a Segment Tree, also known as a statistic tree, is a tree data structure used for storing information about intervals, or segments. It allows querying which of the stored segments contain a given point. It is, in principle, a static structure; that is, it’s a structure that cannot be modified once it’s built. A similar data structure is the interval tree.
+
+
+
+
+

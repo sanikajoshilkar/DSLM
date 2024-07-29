@@ -1,0 +1,26 @@
+1. Which of the following is not a stable sorting algorithm in its typical implementation.
+  1. Insertion Sort
+  2. Merge Sort
+  3. Quick Sort
+  4. Bubble Sort
+2. Which of the following sorting algorithms is the fastest for sorting small arrays?
+  1. Insertion sort
+  2. Shell sort
+  3. Quick sort
+  4. Heap sort
+3. Which of the following method is used for sorting in merge sort?
+  1. merging
+  2. partitioning
+  3. exchanging
+  4. selection
+4. Which of the following sorting algorithm does not use recursion?
+  1. quick sort
+  2. merge sort
+  3. heap sort
+  4. bottom up merge sort
+5.Quick sort uses which of the following method to implement sorting?
+  1. selection
+  2. partitioning
+  3. exchanging
+  4. merging
+

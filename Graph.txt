@@ -1,0 +1,45 @@
+Definition:- 
+      A graph can be defined as group of vertices and edges that are used to connect these vertices. A graph can be seen as a cyclic tree, where the vertices (Nodes) maintain any complex relationship among them instead of having parent child relationship. A graph G can be defined as an ordered set G(V, E) where V(G) represents the set of vertices and E(G) represents the set of edges which are used to connect these vertices.
+
+Components of a Graph:-
+
+1). Vertices: Vertices are the fundamental units of the graph. Sometimes, vertices are also known as vertex or nodes. Every node/vertex can be labeled or unlabelled.
+
+2). Edges: Edges are drawn or used to connect two nodes of the graph. It can be ordered pair of nodes in a directed graph. Edges can connect any two nodes in any possible way. There are no rules. Sometimes, edges are also known as arcs. Every edge can be labelled/unlabelled.
+
+Types Of Graph:- 
+
+1. Null Graph:
+        A graph is known as a null graph if there are no edges in the graph.
+
+2. Trivial Graph:
+       Graph having only a single vertex, it is also the smallest graph possible.
+
+3. Undirected Graph:
+      A graph in which edges do not have any direction. That is the nodes are unordered pairs in the definition of every edge. 
+
+4. Directed Graph:
+     A graph in which edge has direction. That is the nodes are ordered pairs in the definition of every edge.
+
+5. Connected Graph:
+    The graph in which from one node we can visit any other node in the graph is known as a connected graph. 
+
+6. Disconnected Graph:
+    The graph in which at least one node is not reachable from a node is known as a disconnected graph.
+
+7. Regular Graph:
+    The graph in which the degree of every vertex is equal to K is called K regular graph.
+
+8. Complete Graph:
+     The graph in which from each node there is an edge to each other node.
+
+9. Weighted Graph:
+     A graph in which the edges are already specified with suitable weight is known as a weighted graph. Weighted graphs can be further classified as directed weighted graphs and undirected weighted graphs.
+
+Basic Operations on Graphs:
+
+1). Insertion of Nodes/Edges in the graph – Insert a node into the graph.
+2). Deletion of Nodes/Edges in the graph – Delete a node from the graph.
+3). Searching on Graphs – Search an entity in the graph.
+4). Traversal of Graphs – Traversing all the nodes in the graph.
+

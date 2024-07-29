@@ -1,0 +1,25 @@
+1. A linear list of elements in which deletion can be done from one end (front) and insertion can take place only at the other end (rear) is known as _____________
+   1. Queue
+   2. Stack
+   3. Tree
+   4. Linked list
+2. The data structure required for Breadth First Traversal on a graph is?
+   1. Stack
+   2. Queue
+   3. Array 
+   4. Tree
+3. A queue follows __________
+   1. FIFO (First In First Out) principle
+   2. LIFO (Last In First Out) principle
+   3. Ordered array
+   4. Linear tree
+4. Circular Queue is also known as ________
+   1. Square Buffer
+   2. Ring Buffer
+   3. Rectangle Buffer
+   4. Curve Buffer
+5. A data structure in which elements can be inserted or deleted at/from both ends but not in the middle is?
+   1. Dequeue
+   2. Circular queue
+   3. Queue
+   4. Priority queue

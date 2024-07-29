@@ -1,0 +1,168 @@
+Definition:-
+     1. A queue can be defined as an ordered list which enables insert operations to be performed at one end called REAR and delete operations to be performed at another end called FRONT.
+
+2. Queue is referred to be as First In First Out list.
+
+Types of Queues in Data Structure:-
+                            1.Simple Queue
+                            2.Circular Queue
+                            3.Priority Queue
+                            4.Double-Ended Queue (Deque)
+1. Simple Queue:-
+
+    Simple Queue is a linear data structure that follows the First-In-First-Out (FIFO) principle, where elements are added to the rear (back) and removed from the front (head).
+
+1). Ordered collection of comparable data kinds.
+2). Queue structure is FIFO (First in, First Out).
+3). When a new element is added, all elements added before the new element must be deleted in order to remove the new element.
+
+2. Circular Queue:- 
+
+    A circular queue is a special case of a simple queue in which the last member is linked to the first. As a result, a circle-like structure is formed.
+
+1). The last node is connected to the first node.
+2). Also known as a Ring Buffer, the nodes are connected end to end.
+3). Insertion takes place at the front of the queue, and deletion at the end of the queue.
+4). Circular queue application: Insertion of days in a week.
+
+3.Priority Queue:- 
+
+    In a priority queue, the nodes will have some predefined priority in the priority queue. The node with the least priority will be the first to be removed from the queue. Insertion takes place in the order of arrival of the nodes.
+
+Some of the applications of priority queue:
+
+1). Dijkstra’s shortest path algorithm
+2). Prim’s algorithm
+3). Data compression techniques like Huffman code
+
+4. Deque (Double Ended Queue)::- 
+
+      In a double-ended queue, insertion and deletion can occur at both the queue's front and rear ends.
+
+Algorithm for enqueue:-
+
+ 	procedure enqueuer (data) 
+ 	if queue is full
+
+ 	return overflow 
+ 	endif
+
+ 	 rear ← rear + 1 
+	queue[rear] ← data
+
+	 return true 
+	end procedure
+
+
+Algorithm for enqueue:-
+
+	procedure dequeue 
+ 	if queue is empty
+
+     	return underflow 
+ 	end if  data = queue[front]front ← front + 1return trueend procedure
+
+
+Queue implementation in c:
+
+#include <stdio.h>
+# define SIZE 100
+void enqueue();
+void dequeue();
+void show();
+int inp_arr[SIZE];
+int Rear = - 1;
+int Front = - 1;
+main()
+{
+    int ch;
+    while (1)
+    {
+        printf("1.Enqueue Operation\n");
+        printf("2.Dequeue Operation\n");
+        printf("3.Display the Queue\n");
+        printf("4.Exit\n");
+        printf("Enter your choice of operations : ");
+        scanf("%d", &ch);
+        switch (ch)
+        {
+            case 1:
+            enqueue();
+            break;
+            case 2:
+            dequeue();
+            break;
+            case 3:
+            show();
+            break;
+            case 4:
+            exit(0);
+            default:
+            printf("Incorrect choice \n");
+        } 
+    } 
+} 
+ 
+void enqueue()
+{
+    int insert_item;
+    if (Rear == SIZE - 1)
+       printf("Overflow \n");
+    else
+    {
+        if (Front == - 1)
+      
+        Front = 0;
+        printf("Element to be inserted in the Queue\n : ");
+        scanf("%d", &insert_item);
+        Rear = Rear + 1;
+        inp_arr[Rear] = insert_item;
+    }
+} 
+ 
+void dequeue()
+{
+    if (Front == - 1 || Front > Rear)
+    {
+        printf("Underflow \n");
+        return ;
+    }
+    else
+    {
+        printf("Element deleted from the Queue: %d\n", inp_arr[Front]);
+        Front = Front + 1;
+    }
+} 
+ 
+void show()
+{
+    
+    if (Front == - 1)
+        printf("Empty Queue \n");
+    else
+    {
+        printf("Queue: \n");
+        for (int i = Front; i <= Rear; i++)
+            printf("%d ", inp_arr[i]);
+        printf("\n");
+    }
+} 
+	Output:
+
+	1.Enqueue Operation
+	2.Dequeue Operation
+	3.Display the Queue
+	4.Exit
+	Enter your choice of operations : 1
+	Element to be inserted in the Queue: 10
+
+	1.Enqueue Operation
+	2.Dequeue Operation
+	3.Display the Queue
+	4.Exit
+	Enter your choice of operations : 1
+	Element to be inserted in the Queue: 20
+
+
+
+

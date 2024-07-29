@@ -1,0 +1,154 @@
+Definition:-
+   Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out). LIFO implies that the element that is inserted last, comes out first and FILO implies that the element that is inserted first, comes out last.
+
+Standard Stack Operations:-
+
+The following are some common operations implemented on the stack:-
+
+1).push(): When we insert an element in a stack then the operation is known as a push. If the stack is full then the overflow condition occurs.
+
+2).pop(): When we delete an element from the stack, the operation is known as a pop. If the stack is empty means that no element exists in the 3).   stack, this state is known as an underflow state.
+
+3).isEmpty(): It determines whether the stack is empty or not.
+
+4).isFull(): It determines whether the stack is full or not.
+
+5).peek(): It returns the element at the given position.
+
+5).count(): It returns the total number of elements available in a stack.
+
+6).change(): It changes the element at the given position.
+
+7).display(): It prints all the elements available in the stack.
+
+PUSH :-
+
+   Adds an item to the stack. If the stack is full, then it is said to be an Overflow condition.
+
+Algorithm for push:-
+
+	begin
+ 	if stack is full
+   	 return
+ 	endif
+	else  
+ 	increment top
+	stack[top] assign value
+	end else
+	end procedure
+
+POP :-
+
+   Removes an item from the stack. The items are popped in the reversed order in which they are pushed. If the stack is empty, then it is said to be an Underflow condition.
+
+Algorithm for pop:-
+
+	begin
+ 	if stack is empty
+   	 return
+ 	endif
+	else
+ 	store value of stack[top]
+ 	decrement top
+ 	return value
+	end else
+	end procedur
+
+Implementation of stack in c :
+
+#include <stdio.h>
+
+#include <stdlib.h>
+
+#define SIZE 4
+
+int top = -1, inp_array[SIZE];
+void push();
+void pop();
+void show();
+
+int main()
+{
+    int choice;
+
+    while (1)
+    {
+        printf("\nPerform operations on the stack:");
+        printf("\n1.Push the element\n2.Pop the element\n3.Show\n4.End");
+        printf("\n\nEnter the choice: ");
+        scanf("%d", &choice);
+
+        switch (choice)
+        {
+        case 1:
+            push();
+            break;
+        case 2:
+            pop();
+            break;
+        case 3:
+            show();
+            break;
+        case 4:
+            exit(0);
+
+        default:
+            printf("\nInvalid choice!!");
+        }
+    }
+}
+
+void push()
+{
+    int x;
+
+    if (top == SIZE - 1)
+    {
+        printf("\nOverflow!!");
+    }
+    else
+    {
+        printf("\nEnter the element to be added onto the stack: ");
+        scanf("%d", &x);
+        top = top + 1;
+        inp_array[top] = x;
+    }
+}
+
+void pop()
+{
+    if (top == -1)
+    {
+        printf("\nUnderflow!!");
+    }
+    else
+    {
+        printf("\nPopped element: %d", inp_array[top]);
+        top = top - 1;
+    }
+}
+
+void show()
+{
+    if (top == -1)
+    {
+        printf("\nUnderflow!!");
+    }
+    else
+    {
+        printf("\nElements present in the stack: \n");
+        for (int i = top; i >= 0; --i)
+            printf("%d\n", inp_array[i]);
+    }
+}
+
+Output:
+	Perform operations on the stack:
+	1.Push the element
+	2.Pop the element
+	3.Show
+	4.End
+
+	Enter the choice: 1
+
+	Enter the element to be inserted onto the stack: 10

@@ -1,0 +1,32 @@
+1. Which of the following data structure allows you to insert the elements from both the ends while deletion from only one end?
+   1. Output-restricted queue
+   2. Input-restricted queue
+   3. Priority queue
+   4. None of the above
+2. Linked lists are best suited 
+   1. for the size of the structure and the data in the structure are constantly changing
+   2. for relatively permanent collections of data
+   3. for both of above situation 
+   4. for none of above situation
+3. Which of the following is not a limitation of binary search algorithm? 
+   1. must use a sorted array
+   2. requirement of sorted array is expensive when a lot of insertion and deletions are needed
+   3. binary search algorithm is not efficient when the data elements are more than 1000 
+   4. there must be a mechanism to access middle element directly
+4. The situation when in a linked list START=NULL is 
+   1. underflow 
+   2. overflow 
+   3. housefull 
+   4. saturated
+5. A binary tree whose every node has either zero or two children is called 
+   1. Complete binary tree 
+   2. Binary search tree 
+   3. None of above
+   4. Extended binary tree
+6. A parentheses checker program would be best implemented using
+   1. List
+   2. Queue
+   3. Stack
+   4. Any of the above
+
+  

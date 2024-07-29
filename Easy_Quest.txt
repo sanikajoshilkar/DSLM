@@ -1,0 +1,51 @@
+1. Which one of the following is not the application of the stack data structure
+   1. Asynchronous data transfer
+   2. Recursion
+   3. Backtracking
+   4. String reversal
+2. Which data structure is mainly used for implementing the recursive algorithm?
+   1. Queue
+   2. Stack
+   3. Binary tree
+   4. Linked list
+3. A list of elements in which enqueue operation takes place from one end, and dequeue operation takes place from one end is__
+  1. Queue
+  2. Stack
+  3. Binary tree
+  4. Linked list
+4. Which one of the following is not the type of the Queue?
+   1. Linear Queue
+   2. Circular Queue
+   3. Single ended Queue
+   4. Double ended Queue
+5. In the linked list implementation of queue, where will the new element be inserted?
+   1. At the middle position of the linked list
+   2. At the head position of the linked list
+   3. At the tail position of the linked list
+   4. None of the above
+6. What would be the time complexity if user tries to insert the element at the end of the linked list (head pointer is known)?
+  1. O(1)
+  2. O(nlogn)
+  3. O(logn)
+  4. O(n)
+7. Which one of the following techniques is not used in the Binary tree?
+  1. Randomized traversal
+  2. Preorder traversal
+  3. Postorder traversal
+  4. Inorder traversal
+8. How can we define a AVL tree?
+  1. A tree which is binary search tree and height balanced tree.
+  2. A tree which is a binary search tree but unbalanced tree.
+  3. A tree with utmost two children
+  4. A tree with utmost three childre
+9. For getting best time complexity in the worst case scenario, which type of sorting algorithms are used? 
+  1. Merge sort of algorithm
+  2. Selection sort of algorithm
+  3. Quick sort of algorithm
+  4. Bubble sort of algorithm
+10. Which of the following case does not exist in complexity theory 
+   1. Best case 
+   2. Worst case 
+   3. Null case 
+   4. Average case
+

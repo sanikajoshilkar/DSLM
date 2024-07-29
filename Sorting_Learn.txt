@@ -1,0 +1,138 @@
+Definition:-
+
+  Sorting refers to rearrangement of a given array or list of elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of elements in the respective data structure.
+
+Types:-  1.Comparison based:-
+
+           a)Bubble Sort
+           b)Insertion Sort
+           c)Selection Sort
+           d)Quick Sort
+           e)Merge Sort
+           d)Heap Sort
+
+         2.Non-Comparison based:-
+
+           a)Counting Sort 
+           b)Radix Sort
+
+                                                         COMPARISON BASED
+
+BUBBLE SORT:-
+
+    Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.
+
+Complexity:-
+
+Best Case Complexity - It occurs when there is no sorting required, i.e. the array is already sorted. The best-case time complexity of bubble sort is O(n).
+
+Average Case Complexity - It occurs when the array elements are in jumbled order that is not properly ascending and not properly descending. The average case time complexity of bubble sort is O(n2).
+
+Worst Case Complexity - It occurs when the array elements are required to be sorted in reverse order. That means suppose you have to sort the array elements in ascending order, but its elements are in descending order. The worst-case time complexity of bubble sort is O(n2).
+
+INSERTION SORT:-
+
+    Insertion sort is a simple sorting algorithm that works similarly to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
+
+Complexity:-
+
+Best Case Complexity - It occurs when there is no sorting required, i.e. the array is already sorted. The best-case time complexity of insertion sort is O(n).
+
+Average Case Complexity - It occurs when the array elements are in jumbled order that is not properly ascending and not properly descending. The average case time complexity of insertion sort is O(n2).
+
+Worst Case Complexity - It occurs when the array elements are required to be sorted in reverse order. That means suppose you have to sort the array elements in ascending order, but its elements are in descending order. The worst-case time complexity of insertion sort is O(n2).
+
+SELECTION SORT:-
+
+    Selection sort is another sorting technique in which we find the minimum element in every iteration and place it in the array beginning from the first index. Thus, a selection sort also gets divided into a sorted and unsorted subarray.
+
+Complexity:-
+
+Best Case Complexity - It occurs when there is no sorting required, i.e. the array is already sorted. The best-case time complexity of selection sort is O(n2).
+
+Average Case Complexity - It occurs when the array elements are in jumbled order that is not properly ascending and not properly descending. The average case time complexity of selection sort is O(n2).
+
+Worst Case Complexity - It occurs when the array elements are required to be sorted in reverse order. That means suppose you have to sort the array elements in ascending order, but its elements are in descending order. The worst-case time complexity of selection sort is O(n2).
+
+QUICK SORT:-
+
+   Quicksort is a sorting algorithm based on the divide and conquer approach where an array is divided into subarrays by selecting a pivot element (element selected from the array).
+1. While dividing the array, the pivot element should be positioned in such a way that elements less than the pivot are kept on the left side, and elements greater than the pivot is on the right side of the pivot.
+2. The left and right subarrays are also divided using the same approach. This process continues until each subarray contains a single element.
+3. At this point, elements are already sorted. Finally, elements are combined to form a sorted array.
+
+Complexity:-
+
+Best Case Complexity - In Quicksort, the best-case occurs when the pivot element is the middle element or near to the middle element. The best-case time complexity of quicksort is O(n*logn).
+
+Average Case Complexity - It occurs when the array elements are in jumbled order that is not properly ascending and not properly descending. The average case time complexity of quicksort is O(n*logn).
+
+Worst Case Complexity - In quick sort, worst case occurs when the pivot element is either greatest or smallest element. Suppose, if the pivot element is always the last element of the array, the worst case would occur when the given array is sorted already in ascending or descending order. The worst-case time complexity of quicksort is O(n2).
+
+MERGE SORT:-
+
+   The Merge Sort algorithm is a sorting algorithm that is based on the Divide and Conquers paradigm. In this algorithm, the array is initially divided into two equal halves and then they are combined in a sorted manner.
+
+The merge sort algorithm is an implementation of the divide and conquers technique. Thus, it gets completed in three steps:
+
+Divide: In this step, the array/list divides itself recursively into sub-arrays until the base case is reached.
+Conquer: Here, the sub-arrays are sorted using recursion.
+Combine: This step makes use of the merge( ) function to combine the sub-arrays into the final sorted array.
+
+Complexity:-
+
+
+Best Case Complexity - It occurs when there is no sorting required, i.e. the array is already sorted. The best-case time complexity of merge sort is O(n*logn).
+
+Average Case Complexity - It occurs when the array elements are in jumbled order that is not properly ascending and not properly descending. The average case time complexity of merge sort is O(n*logn).
+
+Worst Case Complexity - It occurs when the array elements are required to be sorted in reverse order. That means suppose you have to sort the array elements in ascending order, but its elements are in descending order. The worst-case time complexity of merge sort is O(n*logn).
+
+HEAP SORT:-
+
+    Heap sort is a comparison-based sorting technique based on Binary Heap data structure. It is similar to the selection sort where we first find the minimum element and place the minimum element at the beginning. Repeat the same process for the remaining elements.
+
+Complexity:-
+
+Best Case Complexity - It occurs when there is no sorting required, i.e. the array is already sorted. The best-case time complexity of heap sort is O(n logn).
+
+Average Case Complexity - It occurs when the array elements are in jumbled order that is not properly ascending and not properly descending. The average case time complexity of heap sort is O(n log n).
+
+Worst Case Complexity - It occurs when the array elements are required to be sorted in reverse order. That means suppose you have to sort the array elements in ascending order, but its elements are in descending order. The worst-case time complexity of heap sort is
+O(n log n).
+
+                                                       NON-COMPARISON BASED
+
+COUNTING SORT:-
+
+    Counting sort is a sorting technique based on keys between a specific range. It works by counting the number of objects having distinct key values (kind of hashing). Then do some arithmetic to calculate the position of each object in the output sequence. 
+
+Complexity:-
+
+Best Case Complexity - It occurs when there is no sorting required, i.e. the array is already sorted. The best-case time complexity of counting sort is O(n + k).
+
+Average Case Complexity - It occurs when the array elements are in jumbled order that is not properly ascending and not properly descending. The average case time complexity of counting sort is O(n + k).
+
+Worst Case Complexity - It occurs when the array elements are required to be sorted in reverse order. That means suppose you have to sort the array elements in ascending order, but its elements are in descending order. The worst-case time complexity of counting sort is
+O(n + k).
+
+RADIX SORT:-
+
+   Radix sort is a non-comparative sorting algorithm that is used to sort the data in lexicographical (dictionary) order.It uses counting sort as a subroutine, to sort an array of integer digit by digit and array of strings character by character.
+
+Complexity:-
+
+Best Case Complexity - It occurs when there is no sorting required, i.e. the array is already sorted. The best-case time complexity of Radix sort is Ω(n+k).
+
+Average Case Complexity - It occurs when the array elements are in jumbled order that is not properly ascending and not properly descending. The average case time complexity of Radix sort is θ(nk).
+
+Worst Case Complexity - It occurs when the array elements are required to be sorted in reverse order. That means suppose you have to sort the array elements in ascending order, but its elements are in descending order. The worst-case time complexity of Radix sort is O(nk).
+
+
+
+
+
+
+
+
+

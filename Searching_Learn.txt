@@ -1,0 +1,91 @@
+Defination:-
+    Searching is the fundamental process of locating a specific element or item within a collection of data. This collection of data can take various forms, such as arrays, lists, trees, or other structured representations.
+
+Types:- 1.Linear Search
+        2.Binary Search
+
+LINEAR SEARCH:-
+
+   Linear search is also called as sequential search algorithm. It is the simplest searching algorithm. In Linear search, we simply traverse the list completely and match each element of the list with the item whose location is to be found. If the match is found, then the location of the item is returned; otherwise, the algorithm returns NULL.It is widely used to search an element from the unordered list, i.e., the list in which items are not sorted.
+  
+Complexity:-
+
+Best Case Complexity : In Linear search, best case occurs when the element we are finding is at the first position of the array. The best-case time complexity of linear search is O(1).
+
+Average Case Complexit : The average case time complexity of linear search is O(n).
+
+Worst Case Complexity : In Linear search, the worst case occurs when the element we are looking is present at the end of the array. The worst-case in linear search could be when the target element is not present in the given array, and we have to traverse the entire array. The worst-case time complexity of linear search is O(n).
+ 
+
+BINARY SEARCH:-
+
+   Binary search is the search technique that works efficiently on sorted lists. Hence, to search an element into some list using the binary search technique, we must ensure that the list is sorted.It follows the divide and conquer approach in which the list is divided into two halves, and the item is compared with the middle element of the list. If the match is found then, the location of the middle element is returned. Otherwise, we search into either of the halves depending upon the result produced through the match.
+
+Complexity:-
+
+Best Case Complexity - In Binary search, best case occurs when the element to search is found in first comparison, i.e., when the first middle element itself is the element to be searched. The best-case time complexity of Binary search is O(1).
+
+Average Case Complexity - The average case time complexity of Binary search is O(logn).
+
+Worst Case Complexity - In Binary search, the worst case occurs, when we have to keep reducing the search space till it has only one element. The worst-case time complexity of Binary search is O(logn).
+
+Implementation of linear search in c:
+
+/ Linear Search in C
+
+#include <stdio.h>
+
+int search(int array[], int n, int x) {
+  
+  // Going through array sequencially
+  for (int i = 0; i < n; i++)
+    if (array[i] == x)
+      return i;
+  return -1;
+}
+
+int main() {
+  int array[] = {2, 4, 0, 1, 9};
+  int x = 1;
+  int n = sizeof(array) / sizeof(array[0]);
+
+  int result = search(array, n, x);
+
+  (result == -1) ? printf("Element not found") : printf("Element found at index: %d", result);
+}
+
+Implementation of binary search in c:
+
+#include <stdio.h>
+int main()
+{
+int i, low, high, mid, n, key, array[100];
+printf("Enter number of elementsn");
+scanf("%d",&n);
+printf("Enter %d integersn", n);
+for(i = 0; i < n; i++)
+scanf("%d",&array[i]);
+printf("Enter value to findn");
+scanf("%d", &key);
+low = 0;
+high = n - 1;
+mid = (low+high)/2;
+while (low <= high) {
+if(array[mid] < key)
+low = mid + 1;
+else if (array[mid] == key) {
+printf("%d found at location %d.n", key, mid+1);
+break;
+}
+else
+high = mid - 1;
+mid = (low + high)/2;
+}
+if(low > high)
+printf("Not found! %d isn't present in the list.n", key);
+return 0;
+}
+
+
+    
+       
